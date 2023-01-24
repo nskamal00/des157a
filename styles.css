@@ -102,6 +102,11 @@ section {
     flex: 3;
 }
 
+footer {
+    display: inline;
+    text-align: center;
+}
+
 #row {
     display: flex;
     padding: 5px;
