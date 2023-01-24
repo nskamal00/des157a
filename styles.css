@@ -1,13 +1,13 @@
 body {
+    background-image: url("fieldofstars.jpg");
     font-family: 'Syne', sans-serif;
     color: white;
-    background: black;
 }
 
 nav li {
     display: inline;
     text-align: center;
-    padding: 100px;
+    padding: 110px;
     font-weight: 700;
     color: #D1FC51;
     font-size: 30px;
@@ -20,46 +20,80 @@ a {
 
 header {
     position: relative;
-    top: 200px;
-    padding: 2px 0;
+    top: -100px;
+    margin-bottom: -150px;
+}
+
+.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 665px;
+    height: 305px;
+    background-image: url(images/spacegirl.png);
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(images/spacegirl4.png);
+    }
+    33% {
+        background-image: url(images/spacegirl3.png);
+    }
+    66% {
+        background-image: url(images/spacegirl5.png);
+    }
+    100% {
+        background-image: url(images/spacegirl2.png);
+    }
 }
 
 .portal {
     margin: auto;
-    padding-bottom: 14px;
     font-size: 45px;
     text-align: center;
 }
 
 h1 {
-    font-size: 96px;
+    font-size: 120px;
     font-weight: 800;
     text-align: center
 }
 
 h2 {
     position: relative;
-    top: 200px;
     text-align: center;
     font-size: 24px;
     line-height: 1em;
 }
 
-ol li a {
-    display: block;
-    margin: auto;
-}
-
 ul,
 ol {
     position: relative;
-    top: 200px;
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: center;
     line-height: 1.8;
     font-size: 18px;
+}
+
+ol {
+    background-color: rgba(146, 87, 141, .6);
+    height: 350px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px 100px;
+    border-radius: 50px;
 }
 
 section {
@@ -71,21 +105,9 @@ section {
 #row {
     display: flex;
     padding: 5px;
+    text-align: center;
 }
 
 #small {
     font-size: 14px;
-}
-
-@media only screen and (min-width: 799px) {
-    #row {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-@media (max-width: 599px) {
-    #row {
-        display: block;
-    }
 }
