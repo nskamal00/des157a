@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentation</title>
+</head>
+
+<body>
+    <h1>Experiment 2</h1>
+    <p id="par">
+
+    </p>
+    <script>
+        var yourFood = prompt('choose between cheese,fruit,chicken, and pie', '');
+        var food = ["cheese", "fruit", "chicken", "pie"];
+
+        function which(foodName) {
+            var greeting;
+            if (foodName == null || foodName == '') {
+                greeting = "You didn't give me a food";
+            } else {
+                greeting = `Printing ${foodName}...`;
+                var par = document.getElementById("par");
+                par.innerHTML = greeting;
+                par.style.color = changeColor(foodName);
+            }
+            return greeting;
+        }
+
+        function randomInt(min, max) {
+
+            return Math.floor((max - min + 1) * Math.random()) + min;
+
+        }
+
+        function changeColor(foodName) {
+            if (foodName == food[0])
+                return "green";
+            else if (foodName == food[1])
+                return "blue";
+            else if (foodName == food[2])
+                return "red";
+            else if (foodName == food[3])
+                return "orange";
+
+        }
+        console.log(which(yourFood));
+    </script>
+
+</body>
+
+</html>
