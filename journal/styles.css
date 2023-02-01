@@ -1,0 +1,28 @@
+body {
+    background-image: url("fieldofstars.jpg");
+    font-family: 'Syne', sans-serif;
+    color: #D1FC51;
+}
+
+article {
+    background-color: rgba(146, 87, 141, .6);
+    height: 350px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin: 100px 100px;
+    border-radius: 50px;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center
+}
