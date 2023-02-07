@@ -1,0 +1,60 @@
+body {
+    background-image: url("images/vondel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#image-container {
+    width: 1450px;
+    height: 950px;
+    background: url(images/boarding.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-container {
+    font-family: 'Oswald', sans-serif;
+    border-color: black;
+    width: 450px;
+    padding-left: 1040px;
+    padding-top: 95px;
+}
+
+input[type=text] {
+    width: 40%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: black;
+    opacity: 20%;
+    border-radius: 10px;
+}
+
+header {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    position: relative;
+    padding-top: 100px;
+    letter-spacing: 0.4em;
+    padding-left: 200px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+header h1 {
+    color: #f4ddb4;
+    letter-spacing: 0.45em;
+    text-shadow: 2px 2px 5px black;
+}
+
+form h1 {
+    color: black;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 30px;
+}
