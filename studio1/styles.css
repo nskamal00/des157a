@@ -1,60 +1,99 @@
-body {
-    background-image: url("images/vondel.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-#image-container {
-    width: 1450px;
-    height: 950px;
-    background: url(images/boarding.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#form-container {
-    font-family: 'Oswald', sans-serif;
-    border-color: black;
-    width: 450px;
-    padding-left: 1040px;
-    padding-top: 95px;
-}
-
-input[type=text] {
-    width: 40%;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-color: black;
-    opacity: 20%;
-    border-radius: 10px;
-}
-
-header {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
-    position: relative;
-    padding-top: 100px;
-    letter-spacing: 0.4em;
-    padding-left: 200px;
-}
-
-h2 {
-    color: white;
-    text-shadow: 2px 2px 5px black;
-}
-
-header h1 {
-    color: #f4ddb4;
-    letter-spacing: 0.45em;
-    text-shadow: 2px 2px 5px black;
-}
-
-form h1 {
-    color: black;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 30px;
-}
+    body {
+        background-image: url("images/vondel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    #image-container {
+        width: 1450px;
+        height: 950px;
+        size: 100%;
+        position: absolute;
+        padding-left: 165px;
+    }
+    
+    #myform {
+        font-family: 'Oswald', sans-serif;
+        border-color: #e4e4e4;
+        position: relative;
+        width: 450px;
+        padding-left: 1205px;
+        padding-top: 95px;
+    }
+    
+    input[type=text] {
+        width: 40%;
+        margin: 8px 0;
+        padding: 1px 8px;
+        box-sizing: border-box;
+        border-style: solid;
+        color: black;
+        border-radius: 10px;
+    }
+    
+    #madlib {
+        position: relative;
+        color: black;
+    }
+    
+    input[type=submit] {
+        margin-top: 0.5rem;
+        height: 2.0rem;
+        width: 50%;
+        background-color: #e4e4e4;
+        border: none;
+        color: black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        opacity: 0.8;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .reveal {
+        display: block;
+        font-family: 'Pangolin', cursive;
+        position: relative;
+        width: 300px;
+        padding-left: 1205px;
+        padding-top: 125px;
+        line-height: 1.7em;
+        font-size: 1.15em;
+    }
+    
+    span {
+        text-decoration: underline;
+        text-decoration-color: #5c836a;
+    }
+    
+    header {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 16px;
+        position: relative;
+        padding-top: 100px;
+        letter-spacing: 0.4em;
+        padding-left: 200px;
+    }
+    
+    h2 {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    header h1 {
+        color: #f4ddb4;
+        letter-spacing: 0.45em;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    form h1 {
+        color: black;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 30px;
+    }
