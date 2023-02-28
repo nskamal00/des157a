@@ -1,0 +1,95 @@
+header {
+    text-align: center;
+    font-family: 'Helvetica';
+}
+
+.grid-container {
+    margin-right: 100px;
+    margin-left: 250px;
+}
+
+.chai {
+    border-radius: 7%;
+}
+
+.paneer {
+    border-radius: 7%;
+}
+
+.sadya {
+    border-radius: 7%;
+}
+
+img.sadya:hover {
+    filter: brightness(70%);
+}
+
+img.chai:hover {
+    filter: brightness(70%);
+}
+
+img.puri:hover {
+    filter: brightness(70%);
+}
+
+img.biryani:hover {
+    filter: brightness(70%);
+}
+
+img.chicken:hover {
+    filter: brightness(70%);
+}
+
+.biryani {
+    border-radius: 7%;
+}
+
+.naan {
+    border-radius: 7%;
+    width: 300px;
+}
+
+.puri {
+    border-radius: 7%;
+    width: 300px;
+}
+
+.fish {
+    border-radius: 7%;
+}
+
+.chicken {
+    border-radius: 7%;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
