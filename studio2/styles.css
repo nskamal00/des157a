@@ -1,6 +1,12 @@
+body {
+    background-color: #f6f2e7;
+}
+
 header {
     text-align: center;
-    font-family: 'Helvetica';
+    font-family: 'Samarkan';
+    font-size: 25px;
+    padding-top: 20px;
 }
 
 .grid-container {
@@ -82,14 +88,42 @@ img.chicken:hover {
 }
 
 #overlay article {
+    /* display: inline-block; */
     box-sizing: border-box;
+    border-radius: 5%;
     background-color: #fff;
-    padding: 20px;
-    width: 50vw;
-    height: 80vh;
+    width: 900px;
+    height: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
+}
+
+#overlay h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#overlay p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#overlay img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
