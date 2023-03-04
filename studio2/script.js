@@ -1,33 +1,37 @@
 (function() {
 
     'use strict';
-    console.log('reading js');
-    document.querySelector('.open').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('overlay').className = 'showing';
+
+    const openBtns = document.querySelectorAll('.open');
+    console.log(openBtns);
+    const closeBtns = document.querySelectorAll('.close');
+
+    for (const eachBtn of openBtns) {
+        eachBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const thisBtn = this.id;
+            console.log(thisBtn);
+            if (document.getElementById(`ol-${thisBtn}`).classList.contains('overlay-wide')) {
+                document.getElementById(`ol-${thisBtn}`).className = `overlay-wide showing`;
+            } else {
+                document.getElementById(`ol-${thisBtn}`).className = `overlay-tall showing`;
+            }
 
 
+        });
+    }
 
-
-
-    });
-    document.querySelector('.close').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('overlay').className = 'hidden';
-
-
-
-
-    });
+    for (const eachBtn of closeBtns) {
+        eachBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.showing').className = 'overlay hidden';
+        });
+    }
 
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
-            document.getElementById('overlay').className = 'hidden';
-
+            document.querySelector('.showing').className = 'overlay hidden';
         }
     });
-
-
-    // add script here
 
 })();

@@ -12,18 +12,31 @@ header {
 .grid-container {
     margin-right: 100px;
     margin-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: -10px;
+    grid-row-gap: 20px;
+    margin-right: 270px;
+}
+
+.open {
+    display: block;
 }
 
 .chai {
     border-radius: 7%;
+    grid-area: 1 / 1 / 3 / 2;
 }
 
 .paneer {
     border-radius: 7%;
+    grid-area: 3 / 2 / 5 / 3;
 }
 
 .sadya {
     border-radius: 7%;
+    grid-area: 1 / 2 / 3 / 3;
 }
 
 img.sadya:hover {
@@ -48,24 +61,29 @@ img.chicken:hover {
 
 .biryani {
     border-radius: 7%;
+    grid-area: 1 / 3 / 3 / 4;
 }
 
 .naan {
     border-radius: 7%;
     width: 300px;
+    grid-area: 1 / 4 / 2 / 5;
 }
 
 .puri {
     border-radius: 7%;
     width: 300px;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 .fish {
     border-radius: 7%;
+    grid-area: 3 / 3 / 5 / 4;
 }
 
 .chicken {
     border-radius: 7%;
+    grid-area: 2 / 4 / 4 / 5;
 }
 
 .hidden {
@@ -78,7 +96,7 @@ img.chicken:hover {
     opacity: 1;
 }
 
-#overlay {
+#ol-one {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -87,7 +105,7 @@ img.chicken:hover {
     height: 100vh;
 }
 
-#overlay article {
+#ol-one article {
     /* display: inline-block; */
     box-sizing: border-box;
     border-radius: 5%;
@@ -101,7 +119,7 @@ img.chicken:hover {
     transform: translate(-50%, -50%)
 }
 
-#overlay h2 {
+#ol-one h2 {
     font-family: "Helvetica";
     font-size: 36px;
     letter-spacing: .8px;
@@ -111,7 +129,7 @@ img.chicken:hover {
     padding-left: 500px;
 }
 
-#overlay p {
+#ol-one p {
     font-family: "Helvetica";
     letter-spacing: .8px;
     position: relative;
@@ -120,7 +138,219 @@ img.chicken:hover {
     padding-left: 500px;
 }
 
-#overlay img {
+#ol-one img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* oltwo styles */
+
+#ol-two {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-two article {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-two h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-two p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-two img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* olthree styles */
+
+#ol-three {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-three article {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-three h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-three p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-three img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* olfour styles */
+
+#ol-four {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-four article {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 1200px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-four h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 650px;
+}
+
+#ol-four p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 650px;
+}
+
+#ol-four img {
+    width: 600px;
+    height: 450px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* olfive styles */
+
+#ol-five {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-five article {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-five h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-five p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-five img {
     width: 450px;
     height: 600px;
     position: fixed;
