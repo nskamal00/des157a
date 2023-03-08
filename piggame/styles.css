@@ -29,6 +29,9 @@ div {
 }
 
 #roll {
+    position: fixed;
+    left: 45%;
+    top: 30%;
     background-image: url(images/dices.svg);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -43,6 +46,9 @@ button span {
 }
 
 #quit {
+    position: fixed;
+    left: 45%;
+    top: 50%;
     background-image: url(images/startover.svg);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -53,6 +59,9 @@ button span {
 }
 
 #rollagain {
+    position: fixed;
+    left: 45%;
+    top: 30%;
     background-image: url(images/dices.svg);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -63,6 +72,9 @@ button span {
 }
 
 #pass {
+    position: fixed;
+    left: 45%;
+    top: 40%;
     background-image: url(images/switch.svg);
     background-color: transparent;
     background-repeat: no-repeat;
@@ -72,9 +84,13 @@ button span {
     border: none;
 }
 
-#score {
+#score p {
+    font-size: 96px;
+    position: fixed;
+    right: 20%;
+    top: 20%;
     font-size: 80px;
-    word-spacing: 700px;
+    word-spacing: 1000px;
     text-align: center;
 }
 

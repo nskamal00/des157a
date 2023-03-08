@@ -31,7 +31,7 @@
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
 
-        gameControl.innerHTML = '<h2>The Game Has Started</h2>';
+        gameControl.innerHTML = ' ';
         gameControl.innerHTML += '<button id="quit"></button>';
 
         document
@@ -43,7 +43,7 @@
     });
 
     function setUpTurn() {
-        game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+
         actionArea.innerHTML = '<button id="roll"></button>';
         document.getElementById('roll').addEventListener('click', function() {
 
@@ -82,7 +82,7 @@
         // if neither die is a 1...
         else {
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain"></button> or <button id="pass"></button>';
+            actionArea.innerHTML = '<button id="rollagain"></button> <br> <button id="pass"></button>';
 
             document.getElementById('rollagain').addEventListener('click', function() {
                 //setUpTurn();
@@ -105,7 +105,7 @@
 			wins with ${gameData.score[gameData.index]} points!</h2>`;
 
             actionArea.innerHTML = '';
-            document.getElementById('quit').innerHTML = 'Start a New Game?';
+            document.getElementById('quit').innerHTML = '';
         } else {
             // show current score...
             showCurrentScore();
