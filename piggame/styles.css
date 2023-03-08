@@ -1,0 +1,93 @@
+body {
+    font-family: 'Syne', sans-serif;
+    color: white;
+    padding: 50px;
+    line-height: 1.5em;
+    background-image: url("images/fieldofstars.jpg");
+}
+
+header h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    margin-top: -20px;
+    line-height: 1em;
+    text-align: center;
+    color: white;
+}
+
+button {
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol h2 {
+    color: white;
+}
+
+#roll {
+    background-image: url(images/dices.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 99px;
+    width: 143px;
+    border: none;
+}
+
+button span {
+    display: none;
+}
+
+#quit {
+    background-image: url(images/startover.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 99px;
+    width: 143px;
+    border: none;
+}
+
+#rollagain {
+    background-image: url(images/dices.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 99px;
+    width: 143px;
+    border: none;
+}
+
+#pass {
+    background-image: url(images/switch.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 99px;
+    width: 143px;
+    border: none;
+}
+
+#score {
+    font-size: 80px;
+    word-spacing: 700px;
+    text-align: center;
+}
+
+
+/* #gamecontrol,
+#score {
+    background-color: aliceblue;
+}
+
+#game {
+    background-color: #eaeaea;
+}
+
+#actions {
+    background-color: silver;
+} */
