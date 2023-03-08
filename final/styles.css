@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    margin-top: -20px;
+    line-height: 1em;
+    text-align: center;
+    color: #D1FC51;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+}
+
+main {
+    line-height: 1.5em;
+    font-size: 25px;
+    column-count: 2;
+    column-gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+p {
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: rgba(146, 87, 141, .6);
+}
