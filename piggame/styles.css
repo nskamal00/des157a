@@ -85,7 +85,9 @@ button span {
 }
 
 #score p {
-    font-size: 96px;
+    color: #D1FC51;
+    font-size: 150px;
+    font-weight: 800;
     position: fixed;
     right: 20%;
     top: 20%;
@@ -94,16 +96,47 @@ button span {
     text-align: center;
 }
 
+#score h2 {
+    color: #D1FC51;
+    font-size: 86px;
+    text-align: center;
+    position: fixed;
+    right: 14%;
+    top: 20%;
+    line-height: 1em;
+}
 
-/* #gamecontrol,
+
+/* #characters img {
+    position: fixed;
+} */
+
+img[src="images/planet.svg"] {
+    float: right;
+    bottom: 10%;
+}
+
+#gamecontrol {
+    text-align: center;
+}
+
+
+/* img[src="images/5die.svg"] {
+    padding-top: 500px;
+} */
+
+
+/*  #gamecontrol,
 #score {
     background-color: aliceblue;
 }
+ */
 
 #game {
-    background-color: #eaeaea;
+    padding-left: 755px;
 }
 
-#actions {
+
+/* #actions {
     background-color: silver;
 } */

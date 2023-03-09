@@ -13,6 +13,13 @@
     const game = document.getElementById('game');
     const score = document.getElementById('score');
     const actionArea = document.getElementById('actions');
+    const songBtn = document.getElementById('startgame');
+    const songSound = new Audio('sounds/song.mp3');
+    /* song by home- we're finally landing (royalty free planet) */
+    const diceBtn = document.getElementById('roll');
+    const diceSound = new Audio('sounds/diceroll.mp3');
+    /* free dice roll sound effect: https://www.youtube.com/watch?v=KY4hU1BYWEc */
+
 
     const gameData = {
         dice: ['images/1die.svg', 'images/2die.svg', 'images/3die.svg',
@@ -42,11 +49,16 @@
         setUpTurn();
     });
 
+    songBtn.addEventListener('mousedown', function() {
+        songSound.play();
+    });
+
+
     function setUpTurn() {
 
         actionArea.innerHTML = '<button id="roll"></button>';
         document.getElementById('roll').addEventListener('click', function() {
-
+            diceSound.play();
             throwDice();
 
         });
