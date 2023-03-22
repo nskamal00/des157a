@@ -84,6 +84,8 @@ img.biryani:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
+    gap: 40px;
     transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
@@ -93,28 +95,28 @@ img.biryani:hover {
     font-family: "Helvetica";
     font-size: 36px;
     letter-spacing: .8px;
-    position: relative;
-    width: 40%;
     padding-top: 50px;
-    padding-left: 500px;
 }
 
 #ol-one p {
     color: black;
     font-family: "Helvetica";
     letter-spacing: .8px;
-    position: relative;
-    width: 40%;
     padding-top: 10px;
-    padding-left: 500px;
 }
 
 #ol-one img {
     width: 450px;
     height: 600px;
-    position: fixed;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
