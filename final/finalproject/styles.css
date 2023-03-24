@@ -123,12 +123,12 @@ img.sadya:hover {
     filter: brightness(70%);
 }
 
+
+/* popup styles */
+
 .open {
     display: block;
 }
-
-
-/* popup styles */
 
 .hidden {
     visibility: hidden;
@@ -441,7 +441,7 @@ img.sadya:hover {
 
 /* heart button empty */
 
-#heart {
+.heart {
     position: fixed;
     left: 90%;
     bottom: 91%;
@@ -457,7 +457,7 @@ img.sadya:hover {
 
 /* heart button full */
 
-#filledheart {
+.filledheart {
     position: fixed;
     left: 90%;
     bottom: 91%;
@@ -468,10 +468,4 @@ img.sadya:hover {
     height: 35px;
     width: 35px;
     border: none;
-}
-
-#paragraph {
-    size: 200px;
-    color: black;
-    display: none;
 }

@@ -5,11 +5,17 @@
     const openBtns = document.querySelectorAll('.open');
     console.log(openBtns);
     const closeBtns = document.querySelectorAll('.close');
-    const showImageButton = document.getElementById("heart");
-    const myImage = document.getElementById("filledheart");
-    var p = document.getElementById("paragraph");
+    const showImageButtons = document.getElementsByClassName("heart");
 
-
+    for (const showImageButton of showImageButtons) {
+        showImageButton.addEventListener("click", () => {
+            const parentDiv = showImageButton.parentNode;
+            const myImage = parentDiv.querySelector(".filledheart");
+            const p = parentDiv.querySelector("p");
+            myImage.style.display = "block";
+            p.style.display = "block";
+        });
+    }
     for (const eachBtn of openBtns) {
         eachBtn.addEventListener('click', function(event) {
             event.preventDefault();
@@ -25,6 +31,7 @@
         });
     }
 
+
     for (const eachBtn of closeBtns) {
         eachBtn.addEventListener('click', function(event) {
             event.preventDefault();
@@ -37,10 +44,5 @@
             document.querySelector('.showing').className = 'overlay hidden';
         }
     });
-    showImageButton.addEventListener("click", () => {
-        myImage.style.display = "block";
-        p.style.display = "block";
-    });
-
 
 })();
