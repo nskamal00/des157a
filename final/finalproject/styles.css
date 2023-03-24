@@ -28,20 +28,15 @@ h1 {
 
 .typewriter {
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(44, 41, 37);
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .08em;
-    /* Adjust as needed */
     animation: typing 6s steps(30, end), blink-caret .5s step-end infinite;
 }
 
 
-/* The typing effect */
+/* typing effect */
 
 @keyframes typing {
     from {
@@ -65,13 +60,17 @@ h1 {
     }
 }
 
+
+/* pinterest board layout */
+
 #columns {
     height: 2000px;
     column-width: 250px;
     column-gap: 15px;
     width: 90%;
     max-width: 1750px;
-    margin: 50px auto;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 div #columns figure {
@@ -421,7 +420,8 @@ img.sadya:hover {
 .top a {
     color: inherit;
     text-decoration: underline;
-    font-family: HelveticaNeue-Bold;
+    font-family: HelveticaNeue-Bold, 'Arial', sans-serif;
+    ;
 }
 
 .top a {

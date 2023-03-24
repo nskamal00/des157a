@@ -31,7 +31,6 @@
         });
     }
 
-
     for (const eachBtn of closeBtns) {
         eachBtn.addEventListener('click', function(event) {
             event.preventDefault();

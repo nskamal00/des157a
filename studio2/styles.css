@@ -4,7 +4,7 @@ body {
 
 header {
     text-align: center;
-    font-family: 'Samarkan';
+    font-family: Samarkan;
     font-size: 25px;
     padding-top: 20px;
 }
@@ -380,4 +380,9 @@ img.chicken:hover {
     position: fixed;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+}
+
+@font-face {
+    font-family: Samarkan;
+    src: url(Samarkan.TTF)
 }
