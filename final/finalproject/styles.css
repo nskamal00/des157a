@@ -1,0 +1,477 @@
+header {
+    width: 300px;
+    align-items: center;
+    position: relative;
+}
+
+#searchbar {
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+#logo {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 130px;
+}
+
+h1 {
+    z-index: 100;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    color: black;
+    left: 400px;
+    bottom: 25px;
+    position: absolute;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(44, 41, 37);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .08em;
+    /* Adjust as needed */
+    animation: typing 6s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: rgb(31, 30, 28)
+    }
+}
+
+#columns {
+    height: 2000px;
+    column-width: 250px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1750px;
+    margin: 50px auto;
+}
+
+div #columns figure {
+    background: #fefefe;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 10px 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: opacity .4s ease-in-out;
+}
+
+div #columns figure img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+div img {
+    border-radius: 7%;
+}
+
+div #columns:hover figure:not(:hover) {
+    opacity: 0.4;
+}
+
+
+/* darker on hover */
+
+img.biryani:hover {
+    filter: brightness(70%);
+}
+
+img.chai:hover {
+    filter: brightness(70%);
+}
+
+img.chicken:hover {
+    filter: brightness(70%);
+}
+
+img.puri:hover {
+    filter: brightness(70%);
+}
+
+img.sadya:hover {
+    filter: brightness(70%);
+}
+
+.open {
+    display: block;
+}
+
+
+/* popup styles */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* sadya styles */
+
+#ol-one {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-one article {
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-one h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-one p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-one img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* chai styles */
+
+#ol-two {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-two article {
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-two h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-two p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-two img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* chicken styles */
+
+#ol-three {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-three article {
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-three h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-three p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-three img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* dahi puri styles */
+
+#ol-four {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-four article {
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 1200px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-four h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 650px;
+}
+
+#ol-four p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 650px;
+}
+
+#ol-four img {
+    width: 600px;
+    height: 450px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* sadya styles */
+
+#ol-five {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-five article {
+    box-sizing: border-box;
+    border-radius: 5%;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#ol-five h2 {
+    font-family: "Helvetica";
+    font-size: 36px;
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#ol-five p {
+    font-family: "Helvetica";
+    letter-spacing: .8px;
+    position: relative;
+    width: 40%;
+    padding-top: 10px;
+    padding-left: 500px;
+}
+
+#ol-five img {
+    width: 450px;
+    height: 600px;
+    position: fixed;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+
+/* overlay header positioning */
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top p {
+    left: 7%;
+    font-size: 20px;
+}
+
+
+/* highlight hover for overlay link */
+
+.top a {
+    color: inherit;
+    text-decoration: underline;
+    font-family: HelveticaNeue-Bold;
+}
+
+.top a {
+    box-shadow: inset 0 0 0 0 white;
+    color: black;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.top a:hover {
+    color: black;
+    box-shadow: inset 300px 0 0 0 #f7c46c;
+    ;
+}
+
+
+/* heart button empty */
+
+#heart {
+    position: fixed;
+    left: 90%;
+    bottom: 91%;
+    background-image: url(images/heart.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+
+/* heart button full */
+
+#filledheart {
+    position: fixed;
+    left: 90%;
+    bottom: 91%;
+    background-image: url(images/solidheart.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+#paragraph {
+    size: 200px;
+    color: black;
+    display: none;
+}
