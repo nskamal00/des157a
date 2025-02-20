@@ -4,25 +4,55 @@ body {
     color: white;
 }
 
+
+/* Navigation Bar - Centering Items Above Sections */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* Keeps items spaced evenly */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 75%;
+    /* Matches the width of the sections */
+}
+
 nav li {
-    display: inline;
     text-align: center;
-    padding: 110px;
     font-weight: 700;
     color: #D1FC51;
     font-size: 30px;
+    flex: 1;
+    /* Ensures equal spacing */
 }
+
+
+/* Links */
 
 a {
     text-decoration: none;
     color: white;
 }
 
+
+/* Header */
+
 header {
     position: relative;
     top: -100px;
     margin-bottom: -150px;
 }
+
+
+/* Animated Content */
 
 .content {
     display: block;
@@ -57,16 +87,22 @@ header {
     }
 }
 
+
+/* Portal Title */
+
 .portal {
     margin: auto;
     font-size: 45px;
     text-align: center;
 }
 
+
+/* Heading Styles */
+
 h1 {
     font-size: 120px;
     font-weight: 800;
-    text-align: center
+    text-align: center;
 }
 
 h2 {
@@ -76,6 +112,9 @@ h2 {
     line-height: 1em;
 }
 
+
+/* Lists */
+
 ul,
 ol {
     position: relative;
@@ -83,35 +122,64 @@ ol {
     margin: 0;
     list-style-type: none;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
+    /* Reduced line height to tighten spacing */
     font-size: 18px;
 }
 
-ol {
-    background-color: rgba(146, 87, 141, .6);
-    height: 350px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0px 100px;
-    border-radius: 50px;
+
+/* Main Row - Align Sections */
+
+#row {
+    display: flex;
+    justify-content: space-between;
+    /* Even spacing */
+    gap: 24px;
+    /* Balanced spacing */
+    padding: 5px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    /* Centering the row */
 }
+
+
+/* Section Styling */
 
 section {
     font-weight: 500;
     padding: 20px;
-    flex: 3;
+    flex: 1;
+    /* Ensures sections are evenly spaced */
 }
+
+
+/* Styled Ordered Lists */
+
+ol {
+    background-color: rgba(146, 87, 141, .6);
+    min-height: 350px;
+    /* Ensures all ol sections have the same height */
+    padding: 10px 15px;
+    /* Reduced padding to tighten spacing */
+    margin: 0px 12px;
+    /* Keeps consistent width */
+    border-radius: 30px;
+    /* Softer rounded corners */
+    width: 90%;
+    /* Ensures uniform width */
+}
+
+
+/* Footer */
 
 footer {
     display: inline;
     text-align: center;
 }
 
-#row {
-    display: flex;
-    padding: 5px;
-    text-align: center;
-}
+
+/* Small Text */
 
 #small {
     font-size: 14px;
